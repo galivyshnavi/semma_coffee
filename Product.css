@@ -1,0 +1,201 @@
+.product {
+  padding: 80px 40px;
+  background-color: #fefaf6;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+  
+  
+}
+
+.heading4 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #7a4b29;
+  font-weight: 600;
+  
+}
+
+/* Grid system using Bootstrap */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Card styling */
+.card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+  padding: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.card-body {
+  padding: 15px 10px;
+}
+
+.card-body h3 {
+  font-size: 1.3rem;
+  color: #5a3825;
+  margin: 10px 0;
+}
+
+.card-body p {
+  font-size: 1.1rem;
+  color: #8b5e3c;
+  margin: 0;
+}
+
+.card-body p strike {
+  color: #aaa;
+  margin: 0 5px;
+}
+
+.card-body span i {
+  color: #7a4b29;
+  float: right;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.card-body span i:hover {
+  color: #3e1f0e;
+}
+
+/* Star icons */
+.star i {
+  color: #c2a270;
+  font-size: 1rem;
+  margin: 2px;
+}
+
+
+
+
+
+/* top cards */
+.top-cards{
+  width: 100%;
+  height: 60vh;
+  background: #f7f5f2;
+  font-family: 'Roboto', sans-serif;
+}
+.heading2{
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.heading2 span{
+  color: #b2744c;
+}
+.top-cards .container{
+  margin-top: 30px;
+}
+.top-cards .card{
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+.top-cards .card img{
+  border-radius: 10px;
+}
+.top-cards .card h3{
+  text-align: center;
+  padding-top: 78px;
+  color: white;
+}
+.top-cards .card:hover{
+  transform: translateY(-10px);
+}
+@media screen and (max-width:767px){
+ .top-cards{
+  height: 170vh;
+ } 
+}
+@media screen and (max-width:500px){
+ .top-cards{
+  height: 150vh;
+ } 
+}
+@media screen and (max-width:370px){
+ .top-cards{
+  height: 120vh;
+ } 
+}
+/* top cards */
+
+
+
+/* footer */
+#footer{
+  width: 100%;
+  background: #b2744c;
+  margin-top: 50px;
+}
+.footer-logo img{
+  width: 180px;
+  border-radius: 10px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#footer .socail-links i{
+  font-size: 17px;
+  margin-left: 10px;
+  margin-top: 30px;
+  padding: 10px;
+  background: black;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.credite{
+  color: white;
+  margin-top: 20px;
+}
+.credite{
+  text-shadow: 0px 0px 1px black;
+}
+.credite a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.credite a span{
+  color: black;
+}
+.copyright span{
+  color: black;
+}
+/* footer */
+html{
+  scroll-behavior: smooth;
+}
+.arrow{
+  position: fixed;
+  border-radius: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+}
