@@ -2,7 +2,7 @@
 /* menu page styling */
 .menu {
   padding: 60px 20px;
-  background-color: #fefaf6;
+  background-color: #eabb8b;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -24,9 +24,9 @@
 
 /* Card styling */
 .card {
-  background: #fff;
+  background: #dfd6cd;
   border-radius: 20px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 15px rgba(122, 10, 10, 0.1);
   overflow: hidden;
   transition: all 0.3s ease-in-out;
   text-align: center;
@@ -34,7 +34,6 @@
 }
 
 .card:hover {
-  transform: translateY(-5px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -74,14 +73,17 @@
   transition: color 0.2s ease;
 }
 
-.card-body span i:hover {
-  color: #3e1f0e;
-}
+
+
 
 /* Star icons */
 .star i {
-  color: #c2a270;
+  color: #ed970c;
   font-size: 1rem;
   margin: 2px;
 }
+.star i.gold-star {
+  color: #ed970c; /* Gold on click */
+}
+
 /* menu page stylinh ended */
