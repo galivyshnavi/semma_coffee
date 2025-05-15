@@ -28,6 +28,7 @@
   border-radius: 20px;
   box-shadow: 0 6px 15px rgba(122, 10, 10, 0.1);
   overflow: hidden;
+  cursor: pointer;
   transition: all 0.3s ease-in-out;
   text-align: center;
   padding: 10px;
@@ -83,7 +84,7 @@
   margin: 2px;
 }
 .star i.gold-star {
-  color: #ed970c; /* Gold on click */
+  color: #ed970c; 
 }
 
 /* menu page stylinh ended */
