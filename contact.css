@@ -112,3 +112,15 @@
     width: 250px;
   }
 }
+.custom-btn {
+  background-color: #8B4513; /* SaddleBrown */
+  color: white;
+  border: none;
+}
+.custom-btn:hover {
+  background-color: #A0522D; /* Slightly lighter brown */
+}
+.custom-highlight {
+  color: #A0522D; /* Choose any hex color you want */
+}
+
