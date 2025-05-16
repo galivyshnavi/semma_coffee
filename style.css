@@ -23,6 +23,7 @@ html::-webkit-scrollbar{
   background-color: #b2744c;
   font-family: 'Roboto', sans-serif;
   position:sticky;
+
 }
 #logo img{
   border-radius: 10px;
