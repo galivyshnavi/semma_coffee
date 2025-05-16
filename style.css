@@ -22,6 +22,8 @@ html::-webkit-scrollbar{
 #navbar{
   background-color: #b2744c;
   font-family: 'Roboto', sans-serif;
+  position:sticky;
+
 }
 #logo img{
   border-radius: 10px;
@@ -206,45 +208,6 @@ html::-webkit-scrollbar{
 
 
 
-/* menu */
-.menu{
-  width: 100%;
-  background: #f7f5f2;
-  font-family: 'Roboto', sans-serif;
-}
-.heading3{
-  text-align: center;
-  font-size: 30px;
-  color: #b2744c;
-  font-weight: bold;
-  border-bottom: 2px solid #b2744c;
-}
-#container2{
-  margin-top: 20px;
-}
-.menu .card{
-  background: white;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-.star i{
-  color: #b2744c;
-}
-.menu h3{
-  color: #b2744c;
-  text-align: center;
-  margin-top: 10px;
-  font-size: 25px;
-}
-.menu p{
-  font-size: 16px;
-  color: #b2744c;
-  padding-top: 10px;
-}
-.menu p span{
-  float: right;
-  cursor: pointer;
-}
-/* menu */
 
 
 
