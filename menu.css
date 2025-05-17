@@ -34,6 +34,14 @@
   text-align: center;
   padding: 10px;
 }
+.mug-icon {
+  font-size: 100px;
+  color: white;
+  font-size: 30px;
+  
+}
+
+
 
 .card:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
