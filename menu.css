@@ -16,12 +16,12 @@
 }
 
 /* Grid system using Bootstrap */
-.row {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  justify-content: center !important;
+/* .row {
+  display: flex ;
+  flex-wrap: wrap;
+  justify-content: center ;
   gap: 20px;
-}
+} */
 
 /* Card styling */
 .card {
