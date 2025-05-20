@@ -64,8 +64,9 @@ p {
 }
 
 #about-btn {
-  padding: 10px 25px;
+  padding: 5px 5px;
   border: 2px solid #b86b43;
+  text-align: center;
   background-color: transparent;
   color: #b86b43;
   font-size: 1rem;
