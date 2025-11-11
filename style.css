@@ -29,8 +29,8 @@ html::-webkit-scrollbar{
 
 /* Body Layout */
 body {
-  display: flex;
-  height: 100vh;
+  background: #f7f5f2;
+  padding-left: 250px; /* reserve space for fixed sidebar */
 }
 
 /* Reset */
@@ -41,10 +41,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* Body Layout */
+/* Body Layout (duplicate cleanup) */
 body {
-  display: flex;
-  height: 100vh;
+  background: #f7f5f2;
+  padding-left: 250px;
 }
 
 /* Sidebar Styling */
@@ -112,11 +112,8 @@ body {
 
 /* Main Content Area */
 .main-content {
-  margin-left: 250px;
   flex: 1;
-  margin-left: 250px;
   padding: 30px;
-  background: url('images/coffee-bg.jpg') no-repeat center center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -165,6 +162,46 @@ body {
 }
 
 
+/* Light content variant: no overlay, default text color */
+.main-content.light {
+  background: #ffffff;
+  color: #000;
+}
+.main-content.light::before {
+  content: none;
+}
+
+/* Responsive: collapse sidebar into top bar */
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 0;
+    padding-top: 80px; /* space for top bar */
+  }
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 12px 16px;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: auto;
+  }
+  .logo-section {
+    display: none;
+  }
+  .nav-item {
+    width: auto;
+    padding: 10px 12px;
+    gap: 8px;
+    white-space: nowrap;
+  }
+  .main-content {
+    padding: 20px;
+    align-items: stretch;
+  }
+}
 
 
 /* about */

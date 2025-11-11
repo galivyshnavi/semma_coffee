@@ -1,34 +1,65 @@
-/* navbar */
+/* Left sidebar navbar */
 #navbar {
-  background-color: #b2744c;
-  font-family: 'Roboto', sans-serif;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  height: 100vh;
+  width: 240px;
+  background-color: #b2744c;
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 12px;
+  overflow-y: auto;
+}
+
+#navbar .container-fluid {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 12px;
+  height: 100%;
+  padding: 0;
 }
 
 #logo img {
   border-radius: 10px;
   width: 160px;
-  margin-left: 40px;
+  margin: 0 auto 8px auto;
+  display: block;
 }
 
 .navbar-nav {
-  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 8px 0 12px 0;
+  padding: 0;
+}
+
+.nav-item {
+  list-style: none;
 }
 
 .nav-item .nav-link {
+  display: block;
   color: black;
-  margin-left: 10px;
   font-weight: bold;
-  transition: 0.5s;
+  transition: 0.2s ease;
   text-decoration: none;
+  padding: 10px 12px;
+  border-radius: 6px;
 }
 
 .nav-item .nav-link:hover {
   background: #f7f5f2;
-  border-radius: 5px;
   color: black;
+}
+
+#navbar form {
+  margin-top: auto;
+  display: flex;
+  gap: 8px;
 }
 
 #navbar form button {
@@ -38,6 +69,7 @@
 }
 
 .navbar-toggler {
+  display: none;
   border: none;
 }
 
@@ -45,13 +77,35 @@
   box-shadow: none;
 }
 
+/* Responsive: convert sidebar into top bar on small screens */
 @media (max-width: 768px) {
-  #logo img {
-    margin-left: 10px;
-    width: 120px;
+  #navbar {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    padding: 8px 12px;
   }
-  
+
+  #navbar .container-fluid {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  #logo img {
+    width: 120px;
+    margin: 0;
+  }
+
   .navbar-nav {
-    margin-left: 0;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 8px;
+  }
+
+  .nav-item .nav-link {
+    white-space: nowrap;
+    padding: 8px 10px;
   }
 }
+ 
