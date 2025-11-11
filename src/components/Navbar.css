@@ -1,0 +1,57 @@
+/* navbar */
+#navbar {
+  background-color: #b2744c;
+  font-family: 'Roboto', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#logo img {
+  border-radius: 10px;
+  width: 160px;
+  margin-left: 40px;
+}
+
+.navbar-nav {
+  margin-left: 50px;
+}
+
+.nav-item .nav-link {
+  color: black;
+  margin-left: 10px;
+  font-weight: bold;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+.nav-item .nav-link:hover {
+  background: #f7f5f2;
+  border-radius: 5px;
+  color: black;
+}
+
+#navbar form button {
+  background: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  #logo img {
+    margin-left: 10px;
+    width: 120px;
+  }
+  
+  .navbar-nav {
+    margin-left: 0;
+  }
+}

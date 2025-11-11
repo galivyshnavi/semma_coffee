@@ -1,0 +1,126 @@
+/* contact */
+.contact {
+  width: 100%;
+  min-height: 100vh;
+  background: #f7f5f2;
+  padding-top: 70px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact .container {
+  width: 100%;
+  min-height: 80vh;
+  background: white;
+  background: linear-gradient(90deg, white 80%, #b2744c 20%);
+  border-radius: 10px;
+  padding: 40px;
+}
+
+.contact h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.custom-highlight {
+  color: #b2744c;
+}
+
+.contact p {
+  font-weight: bold;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.contact input {
+  width: 100%;
+  max-width: 360px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.contact input:focus {
+  outline: none;
+  border-bottom: 2px solid #b2744c;
+}
+
+.custom-btn {
+  width: 200px;
+  height: 40px;
+  border: none;
+  background: #b2744c;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.custom-btn:hover {
+  background: #8b4513;
+  transform: translateY(-2px);
+}
+
+#col {
+  width: 40%;
+  min-height: 56vh;
+  background: black;
+  margin-top: 78px;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.contact #col h2 {
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.contact #col p {
+  font-size: 15px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.contact #col i {
+  color: #b2744c;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 766px) {
+  .contact .container {
+    background: white;
+    padding: 20px;
+  }
+  
+  #col {
+    width: 100%;
+    background: #b2744c;
+    margin-top: 30px;
+  }
+  
+  .contact {
+    min-height: 150vh;
+  }
+  
+  .contact input {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact input {
+    width: 100%;
+  }
+  
+  .custom-btn {
+    width: 100%;
+  }
+}
