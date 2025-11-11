@@ -95,7 +95,7 @@ html::-webkit-scrollbar{
 }
 .content h3{
   font-size: 50px;
-  color: white;
+  color: rgb(203, 45, 45);
 }
 .content p{
   margin-top: 10px;
@@ -113,7 +113,7 @@ html::-webkit-scrollbar{
   cursor: pointer;
 }
 #btn:hover{
-  background: #b2744c;
+  background: #4c5bb2;
   color: white;
 }
 /* home content */
