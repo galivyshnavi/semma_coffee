@@ -21,25 +21,39 @@ html::-webkit-scrollbar{
 /* navbar */
 #navbar{
  
-  background-color: #b2744c;
+  background-color: #879e78;
   font-family: 'Roboto', sans-serif;
   position:sticky;
   
 
 
 }
+.sidebar{
+  width: 220px;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.sidebar ul li{
+  margin-bottom: 15px;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+}
 .navbar-nav{
+ 
   margin: 15px 0;
-  
+  padding: 30px;
+  position: fixed;
+  height: 100vh;
+  width: 200px;
   margin-left: 240px;
   margin-bottom: 40px;
 }
-.collapse navbar-collapse {
-  
-  
 
-
-}
 #logo img{
   border-radius: 10px;
   width: 160px;
