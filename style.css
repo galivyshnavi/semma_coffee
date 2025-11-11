@@ -21,51 +21,81 @@ html::-webkit-scrollbar{
 /* navbar */
 #navbar {
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
+  width: 250px;
   height: 100%;
-  width: 220px;
   background-color: #b2744c;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 20px;
+  padding: 30px 10px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
 }
 
 #logo img {
-  width: 120px;
+  width: 140px;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .navbar-nav {
+  list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .nav-item {
   width: 100%;
   text-align: center;
-  margin: 10px 0;
 }
 
+
 .nav-item .nav-link {
-  color: white;
   display: block;
-  padding: 10px 0;
-  width: 100%;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
   text-decoration: none;
-  transition: background 0.3s;
+  padding: 12px 0;
+  width: 100%;
+  transition: all 0.3s ease;
+  border-radius: 5px;
 }
 
 .nav-item .nav-link:hover {
-  background: #8b4513;
+  background-color: #8b4513;
   color: #fff;
 }
-
+#navbar form {
+  margin-top: auto;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#navbar input[type="search"] {
+  width: 90%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin-bottom: 10px;
+}
+#navbar button {
+  background: black;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
 #navbar form button{
   background: black;
   color: white;
