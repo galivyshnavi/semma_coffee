@@ -32,17 +32,26 @@ html::-webkit-scrollbar{
   width: 220px;
   height: 100vh;
   position: fixed;
+  left: 0;
+  right: 0;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+.sidebar ul{
+  width: 100%;
+}
 .sidebar ul li{
   margin-bottom: 15px;
 }
-.main{
-  display: flex;
-  flex-direction: column;
+.sidebar ul li a{
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+
 }
+
 .navbar-nav{
  
   margin: 15px 0;
