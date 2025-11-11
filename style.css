@@ -18,78 +18,152 @@ html::-webkit-scrollbar-thumb{
 html::-webkit-scrollbar{
   width: 10px;
 }
-/* navbar */
-#navbar{
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Layout */
+body {
+  display: flex;
+  height: 100vh;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body Layout */
+body {
+  display: flex;
+  height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
   background-color: #b2744c;
-  font-family: 'Roboto', sans-serif;
-  position:sticky;
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  box-shadow: 3px 0 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  left: 0;
+  top: 0;
+}
 
+/* Logo Section */
+.logo-section {
+  text-align: center;
+  margin-bottom: 40px;
 }
-#logo img{
-  border-radius: 10px;
-  width: 160px;
-  margin-left: 40px;
+
+.logo-section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
-.navbar-nav{
-  margin-left: 50px;
-}
-.nav-item .nav-link{
-  color: black;
-  margin-left: 10px;
-  font-weight: bold;
-  transition: 0.5s;
-}
-.nav-item .nav-link:hover{
-  background: #f7f5f2;
-  border-radius: 5px;
-  color: black;
-}
-#navbar form button{
-  background: black;
-  color: white;
-  border: 1px solid white;
-}
-/* navbar */
-/* home content */
-#home{
-    width: 100%;
-    height: 90vh;
-    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(./images/bc3.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 80%;
-    font-family: 'Roboto', sans-serif;
-}
-.content{
-  padding-top: 210px;
-  margin-left: 56px;
-}
-.content h3{
-  font-size: 50px;
-  color: white;
-}
-.content p{
+
+.logo-section h2 {
+  color: #fff;
   margin-top: 10px;
+  font-size: 20px;
+}
+
+/* Navigation Items */
+.nav-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 90%;
+  padding: 12px 20px;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #8b4513;
+  transform: translateX(5px);
+}
+
+.nav-item i {
+  font-size: 18px;
+  width: 25px;
+  text-align: center;
+}
+
+.nav-item.active {
+  background-color: #8b4513;
+}
+
+/* Main Content Area */
+.main-content {
+  margin-left: 250px;
+  flex: 1;
+  margin-left: 250px;
+  padding: 30px;
+  background: url('images/coffee-bg.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: white;
+  text-align: center;
+  position: relative;
 }
-#btn{
-  width: 150px;
-  height: 36px;
-  margin-top: 20px;
-  background: white;
-  border-radius: 5px;
-  font-weight: bold;
-  border: none;
-  transition: 0.5s ease;
-  cursor: pointer;
+
+.main-content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
 }
-#btn:hover{
+
+.main-content h1,
+.main-content h2,
+.main-content .btn {
+  position: relative;
+  z-index: 1;
+}
+
+.main-content h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.main-content h2 {
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.btn {
   background: #b2744c;
-  color: white;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
-/* home content */
 
-
+.btn:hover {
+  background: #8b4513;
+}
 
 
 
