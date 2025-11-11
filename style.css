@@ -20,9 +20,24 @@ html::-webkit-scrollbar{
 }
 /* navbar */
 #navbar{
+ 
   background-color: #b2744c;
   font-family: 'Roboto', sans-serif;
   position:sticky;
+  
+
+
+}
+.navbar-nav{
+  margin: 15px 0;
+  
+  margin-left: 240px;
+  margin-bottom: 40px;
+}
+.collapse navbar-collapse {
+  
+  
+
 
 }
 #logo img{
