@@ -22,17 +22,11 @@ html::-webkit-scrollbar{
   width: 10px;
 }
 /* navbar */
-/* #navbar{
+#navbar{
  
   background-color: #879e78;
   font-family: 'Roboto', sans-serif;
-  position:sticky;
-  
-
-
-} */
-.sidebar{
-  width: 220px;
+   width: 220px;
   height: 100vh;
   position: fixed;
   left: 0;
@@ -41,7 +35,11 @@ html::-webkit-scrollbar{
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+
+
 }
+
 .sidebar ul{
   width: 100%;
 }
