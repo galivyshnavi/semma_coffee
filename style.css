@@ -4,9 +4,6 @@
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
 }
-.body{
-  display: flex;
-}
 .all-content{
   background: #f7f5f2;
 }
@@ -23,38 +20,11 @@ html::-webkit-scrollbar{
 }
 /* navbar */
 #navbar{
- 
-  background-color: #879e78;
+  background-color: #b2744c;
   font-family: 'Roboto', sans-serif;
-   width: 220px;
-  height: 100vh;
-  position: fixed;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-
+  position:sticky;
 
 }
-
-/* .sidebar ul{
-  width: 100%;
-}
-.sidebar ul li{
-  margin-bottom: 15px;
-}
-.sidebar ul li a{
-  text-decoration: none;
-  display: block;
-  padding: 10px 15px;
-
-} */
-
-
-
 #logo img{
   border-radius: 10px;
   width: 160px;
@@ -96,7 +66,7 @@ html::-webkit-scrollbar{
 }
 .content h3{
   font-size: 50px;
-  color: rgb(203, 45, 45);
+  color: white;
 }
 .content p{
   margin-top: 10px;
@@ -114,7 +84,7 @@ html::-webkit-scrollbar{
   cursor: pointer;
 }
 #btn:hover{
-  background: #4c5bb2;
+  background: #b2744c;
   color: white;
 }
 /* home content */
