@@ -49,7 +49,6 @@ body {
 
 /* Sidebar Styling */
 .sidebar {
-  position: fixed;
   background-color: #b2744c;
   width: 250px;
   height: 100vh;
@@ -97,7 +96,7 @@ body {
 }
 
 .nav-item:hover {
-  background-color: #8b4513;
+  background-color: #b6ada7;
   transform: translateX(5px);
 }
 
@@ -152,8 +151,8 @@ body {
 }
 
 .btn {
-  background: #b2744c;
-  color: #fff;
+  background: #e1d2c9;
+  color: #e9d7d7;
   padding: 10px 25px;
   border-radius: 5px;
   text-decoration: none;
